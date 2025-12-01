@@ -52,20 +52,33 @@ header p {
     grid-template-areas: 
     "content_h3 szoveg_p"
     "tortenet_p telefon";
+    grid-template-columns: minmax(auto ,200px) minmax(auto ,500px);
+    grid-template-rows: 120px ;
+    column-gap: 30px;
+    justify-self: center;
+    color: white;
+    position: relative;
 }
 
 .content-1 h3 {
     grid-area: content_h3;
+    justify-self: end;
 }
 
 .content-1 .tortenet_p {
     grid-area: tortenet_p;
+    position: absolute;
+    top: -90px;
+    right: 5px;
+    color: #a7a7a7;
+    
 }
 
 .content-1 .szoveg_p {
-    grid-area: tortenet_p;
+    grid-area: szoveg_p;
 }
 
 .content-1 h4{
     grid-area: telefon;
+    position: absolute;
 }
