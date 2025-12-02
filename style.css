@@ -1,5 +1,7 @@
 body {
     background-color: #222222;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -25,8 +27,8 @@ header h2 {
     top: 5px;
     left: 30px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
+
 }
 
 header p {
@@ -34,7 +36,6 @@ header p {
     top: 10px;
     right: 270px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header_szoveg {
@@ -42,7 +43,6 @@ header p {
     top: 10px;
     right: 30px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0.7;
 }
 
@@ -55,30 +55,75 @@ header p {
     grid-template-columns: minmax(auto ,200px) minmax(auto ,500px);
     grid-template-rows: 120px ;
     column-gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     justify-self: center;
-    color: white;
     position: relative;
 }
 
-.content-1 h3 {
+.content-1 .pizza_p {
     grid-area: content_h3;
     justify-self: end;
+    font-size: 20px;
+    position: relative;
+    top: -5px;
 }
 
 .content-1 .tortenet_p {
     grid-area: tortenet_p;
     position: absolute;
-    top: -90px;
-    right: 5px;
+    top: -88px;
+    right: 1px;
     color: #a7a7a7;
-    
+    font-size: 12px;
 }
 
 .content-1 .szoveg_p {
     grid-area: szoveg_p;
+    color: #a6a6a6;
 }
 
 .content-1 h4{
     grid-area: telefon;
     position: absolute;
+}
+
+
+.content-2 {
+    display: grid;
+    grid-template-areas: 
+    "menu menu menu"
+    "ajanlat ajanlat ajanlat"
+    "szoveg szoveg szoveg"
+    "pizza_blokk menu_blokk italok_blokk";
+    width: 100vw;
+    justify-items: center;
+    margin-left: -8px;
+    margin-top: 100px;
+    background-color: black;
+}
+
+.content-2 .menu_h3 {
+    grid-area: menu;
+}
+
+.content-2 .ajanlat_p {
+    grid-area: ajanlat;
+}
+
+.content-2 .szoveg_p {
+    grid-area: szoveg;
+}
+
+
+.content-2 .pizza_blokk {
+    grid-area: pizza_blokk;
+}
+
+.content-2 .menu_blokk {
+    grid-area: menu_blokk;
+}
+
+.content-2 .italok_blokk {
+    grid-area: italok_blokk;
 }
