@@ -15,6 +15,10 @@ header {
     margin-top: -7px;
 }
 
+header a:target {
+    animation:fade 5s;
+}
+
 header img {
     height: 100%;
     width: 100%;
@@ -30,6 +34,40 @@ header h2 {
     font-weight: 100;
 
 }
+
+
+.header_kezdolap {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    color: white;
+    font-weight: 100;
+}
+
+.header_menu {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: white;
+    font-weight: 100;
+}
+
+.header_rolunk {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: white;
+    font-weight: 100;
+}
+
+.header_kapcsolat {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: white;
+    font-weight: 100;
+}
+
 
 header p {
     position: absolute;
@@ -96,6 +134,7 @@ header p {
     "ajanlat ajanlat ajanlat"
     "szoveg szoveg szoveg"
     "pizza_blokk menu_blokk italok_blokk";
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
     justify-items: center;
     margin-left: -8px;
@@ -118,6 +157,9 @@ header p {
 
 .content-2 .pizza_blokk {
     grid-area: pizza_blokk;
+    border-top-width: 1px;
+    border-top-color: white;
+    border-top-style: solid;
 }
 
 .content-2 .menu_blokk {
