@@ -38,21 +38,21 @@ header p {
 }
 
 header .header_kezdolap {
-    left: 1300px;
+    left: 65vw;
 }
 
 header .header_menu {
-    left: 1310px;
+    left: 66vw;
     opacity: 0.6;
 }
 
 header .header_rolunk {
-    left: 1320px;
+    left: 67vw;
     opacity: 0.6;
 }
 
 header .header_kapcsolat {
-    left: 1330px;
+    left: 68vw;
     opacity: 0.6;
 }
 
@@ -190,6 +190,7 @@ header .header_kapcsolat {
     grid-template-rows: auto auto 200px auto;
     justify-content: center;
     gap: 40px;
+    padding-bottom: 100px;
 }
 
 .content-3 .pizza_1 {
