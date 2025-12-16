@@ -107,6 +107,7 @@ header p {
     display: flex;
     justify-content: center;
     gap: 40px;
+    padding-bottom: 60px;
 }
 
 .pizza_blokk {
@@ -140,4 +141,64 @@ header p {
     padding-right: 34px;
     height: 40px;
     font-size: 13px;
+}
+
+.content-3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: -8px;
+    width: 100vw;
+}
+
+.content-3 .special_p {
+    font-size: 32px;
+}
+
+.content-3 .tokeletes_p {
+    opacity: 0.6;
+    position: relative;
+    bottom: 20px;
+}
+
+.content-3 .special_container {
+    display: grid;
+    grid-template-areas:
+    "pizza_1 pizza_1 marhapecsenye"
+    "salata pizza_2 marhapecsenye"
+    "salata pizza_2 eloetel"
+    ". . eloetel";
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: auto auto 200px auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.content-3 .pizza_1 {
+    grid-area: pizza_1;
+}
+.content-3 .marhapecsenye {
+    grid-area: marhapecsenye;
+}
+.content-3 .salata {
+    grid-area: salata;
+}
+.content-3 .pizza_2 {
+    grid-area: pizza_2;
+}
+.content-3 .eloetel {
+    grid-area: eloetel;
+    height: 230px;
+}
+
+.content-3 .special_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-3 .special_container p {
+    position: relative;
+    top: -55px;
+    font-size: 20px;
+    font-style: italic;
 }
