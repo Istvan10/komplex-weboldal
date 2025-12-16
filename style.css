@@ -129,6 +129,10 @@ header .header_kapcsolat {
     padding-bottom: 60px;
 }
 
+.content-2_blokkok p:hover {
+    cursor: pointer;
+}
+
 .pizza_blokk {
     border-radius: 1px;
     border-width: 1px;
@@ -262,6 +266,10 @@ footer .foglalas_p {
 footer .footer_szoveg {
     opacity: 0.6;
     font-size: 24px;
+}
+
+.vonal {
+    opacity: 0.6;
 }
 
 .footer_2 {
