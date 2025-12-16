@@ -4,93 +4,45 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-}
-
 header {
-    height: 420px;
+    height: 570px;
     width: 100vw;
     margin-left: -8px;
     margin-top: -7px;
+    background-image: url(images/pizzakep.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-header a:target {
-    animation:fade 5s;
-}
 
-header img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
+.header_nav {
+    display: flex;
 }
 
 header h2 {
-    position: absolute;
-    top: 5px;
-    left: 30px;
     color: white;
     font-weight: 100;
-
+    font-size: 32px;
+    position: relative;
+    top: 30px;
+    left: 50px;
 }
-
-
-.header_kezdolap {
-    position: absolute;
-    top: 5px;
-    right: 1px;
-    color: white;
-    font-weight: 100;
-}
-
-.header_menu {
-    position: absolute;
-    top: 5px;
-    left: 30px;
-    color: white;
-    font-weight: 100;
-}
-
-.header_rolunk {
-    position: absolute;
-    top: 5px;
-    left: 30px;
-    color: white;
-    font-weight: 100;
-}
-
-.header_kapcsolat {
-    position: absolute;
-    top: 5px;
-    left: 30px;
-    color: white;
-    font-weight: 100;
-}
-
 
 header p {
-    position: absolute;
-    top: 10px;
-    right: 270px;
     color: white;
+    font-weight: 100;
+    cursor: pointer;
+    top: 30px;
+    left: 1400px;
+    position: relative;
 }
-
-.header_szoveg {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    color: white;
-    opacity: 0.7;
-}
-
 
 .content-1 {
     display: grid;
     grid-template-areas: 
     "content_h3 szoveg_p"
     "tortenet_p telefon";
-    grid-template-columns: minmax(auto ,200px) minmax(auto ,500px);
+    grid-template-columns: 200px 500px;
     grid-template-rows: 120px ;
     column-gap: 30px;
     padding-top: 40px;
@@ -128,61 +80,64 @@ header p {
 
 
 .content-2 {
-    display: grid;
-    grid-template-areas: 
-    "menu menu menu"
-    "ajanlat ajanlat ajanlat"
-    "szoveg szoveg szoveg"
-    "pizza_blokk menu_blokk italok_blokk";
-    grid-template-columns:1fr 1fr 1fr;
-    width: 100vw;
-    height: 500px;
-    justify-items: center;
     text-align: center;
+    width: 100vw;
     margin-left: -8px;
     margin-top: 100px;
     background-color: black;
 }
 
 .content-2 .menu_h3 {
-    grid-area: menu;
+    padding-top: 40px;
+    font-size: 32px;
 }
 
 .content-2 .ajanlat_p {
-    grid-area: ajanlat;
+    opacity: 0.6;
+    bottom: 25px;
+    position: relative;
 }
 
 .content-2 .szoveg_p {
-    grid-area: szoveg;
+    bottom: 25px;
+    position: relative;
+} 
+
+.content-2_blokkok {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-
-.content-2 .pizza_blokk {
-    grid-area: pizza_blokk;
+.pizza_blokk {
     border-radius: 1px;
+    border-width: 1px;
     border-color: white;
     border-style: solid;
-    border-width: 1px;
+    padding-left: 34px;
+    padding-right: 34px;
     height: 40px;
-    width: 160px;
+    font-size: 13px;
 }
 
-.content-2 .menu_blokk {
-    grid-area: menu_blokk;
+.menu_blokk {
     border-radius: 1px;
+    border-width: 1px;
     border-color: white;
     border-style: solid;
-    border-width: 1px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 34px;
+    padding-right: 34px;
+    height: 40px;
+    font-size: 13px;
 }
 
-.content-2 .italok_blokk {
-    grid-area: italok_blokk;
+.italok_blokk {
     border-radius: 1px;
+    border-width: 1px;
     border-color: white;
     border-style: solid;
-    border-width: 1px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 34px;
+    padding-right: 34px;
+    height: 40px;
+    font-size: 13px;
 }
