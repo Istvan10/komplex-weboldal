@@ -1,3 +1,8 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #222222;
     color: white;
@@ -6,8 +11,8 @@ body {
 
 header {
     height: 570px;
-    width: 100vw;
-    margin-left: -8px;
+    width: 99vw;
+    margin-left: 0;
     margin-top: -7px;
     background-image: url(images/pizzakep.jpg);
     background-size: cover;
@@ -38,21 +43,21 @@ header p {
 }
 
 header .header_kezdolap {
-    left: 65vw;
+    left: 69vw;
 }
 
 header .header_menu {
-    left: 66vw;
+    left: 70vw;
     opacity: 0.6;
 }
 
 header .header_rolunk {
-    left: 67vw;
+    left: 71vw;
     opacity: 0.6;
 }
 
 header .header_kapcsolat {
-    left: 68vw;
+    left: 71vw;
     opacity: 0.6;
 }
 
@@ -100,7 +105,7 @@ header .header_kapcsolat {
 
 .content-2 {
     text-align: center;
-    width: 100vw;
+    width: 99vw;
     margin-left: -8px;
     margin-top: 100px;
     background-color: black;
@@ -170,7 +175,7 @@ header .header_kapcsolat {
     text-align: center;
     margin-top: 70px;
     margin-left: -8px;
-    width: 100vw;
+    width: 99vw;
 }
 
 .content-3 .special_p {
@@ -228,7 +233,7 @@ header .header_kapcsolat {
 }
 
 footer{
-    width: 100vw;
+    width: 99vw;
     background-color: black;
     margin-left: -8px;
 }
@@ -260,7 +265,7 @@ footer .nyitvatartas_p {
 footer .foglalas_p {
     text-decoration: white underline;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 footer .footer_szoveg {
@@ -276,7 +281,7 @@ footer .footer_szoveg {
     justify-self: center;
     text-align: center;
     background-color: black;
-    width: 100vw;
+    width: 99vw;
     padding-top: 100px;
 }
 
