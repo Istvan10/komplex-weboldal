@@ -6,7 +6,7 @@ body,html {
 body {
     background-color: #222222;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -57,7 +57,7 @@ header .header_rolunk {
 }
 
 header .header_kapcsolat {
-    left: 71vw;
+    left: 72vw;
     opacity: 0.6;
 }
 
@@ -66,7 +66,7 @@ header .header_kapcsolat {
     grid-template-areas: 
     "content_h3 szoveg_p"
     "tortenet_p telefon";
-    grid-template-columns: 200px 500px;
+    grid-template-columns: 250px 500px;
     grid-template-rows: 120px ;
     column-gap: 30px;
     padding-top: 40px;
@@ -81,6 +81,16 @@ header .header_kapcsolat {
     font-size: 20px;
     position: relative;
     top: -5px;
+    left: -95px;
+}
+
+.content-1 .pizza2_p {
+    grid-area: content_h3;
+    justify-self: end;
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    
 }
 
 .content-1 .tortenet_p {
@@ -89,7 +99,7 @@ header .header_kapcsolat {
     top: -88px;
     right: 1px;
     color: #a7a7a7;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .content-1 .szoveg_p {
@@ -100,6 +110,7 @@ header .header_kapcsolat {
 .content-1 h4{
     grid-area: telefon;
     position: absolute;
+    top: 10px;
 }
 
 
@@ -143,8 +154,8 @@ header .header_kapcsolat {
     border-width: 1px;
     border-color: white;
     border-style: solid;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 45px;
+    padding-right: 45px;
     height: 40px;
     font-size: 13px;
 }
@@ -154,8 +165,8 @@ header .header_kapcsolat {
     border-width: 1px;
     border-color: white;
     border-style: solid;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 45px;
+    padding-right: 45px;
     height: 40px;
     font-size: 13px;
 }
@@ -165,8 +176,8 @@ header .header_kapcsolat {
     border-width: 1px;
     border-color: white;
     border-style: solid;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 45px;
+    padding-right: 45px;
     height: 40px;
     font-size: 13px;
 }
@@ -291,4 +302,122 @@ footer .footer_szoveg {
     margin-bottom: -8px;
     font-size: 20px;
     opacity: 0.6;
+}
+
+
+/*md*/
+
+@media (max-width: 750px) {
+    .content-1 {
+        display: grid;
+        grid-template-areas: 
+        "content_h3 szoveg_p"
+        "tortenet_p telefon";
+        grid-template-columns: 100px 500px;
+        grid-template-rows: 120px ;
+        column-gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        justify-self: center;
+        position: relative;
+    }
+    
+    .content-1 .pizza_p {
+        grid-area: content_h3;
+        justify-self: end;
+        font-size: 20px;
+        position: relative;
+        top: -5px;
+        left: 0;
+    }
+
+    .content-1 .pizza2_p {
+        grid-area: content_h3;
+        justify-self: end;
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+    }
+    
+    .content-1 .tortenet_p {
+        grid-area: tortenet_p;
+        position: absolute;
+        top: -65px;
+        right: 1px;
+        color: #a7a7a7;
+        font-size: 15px;
+    }
+    
+    .content-1 .szoveg_p {
+        grid-area: szoveg_p;
+        color: #a6a6a6;
+    }
+    
+    .content-1 h4{
+        grid-area: telefon;
+        position: absolute;
+        top: 10px;
+    }
+
+
+    .content-3 {
+        text-align: center;
+        margin-top: 70px;
+        margin-left: -8px;
+        width: 99vw;
+    }
+    
+    .content-3 .special_p {
+        font-size: 32px;
+    }
+    
+    .content-3 .tokeletes_p {
+        opacity: 0.6;
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .content-3 .special_container {
+        display: grid;
+        grid-template-areas:
+        "pizza_1 pizza_1 marhapecsenye"
+        "salata pizza_2 marhapecsenye"
+        "salata pizza_2 eloetel"
+        ". . eloetel";
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: auto auto 200px auto;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 100px;
+    }
+    
+    .content-3 .pizza_1 {
+        grid-area: pizza_1;
+    }
+    .content-3 .marhapecsenye {
+        grid-area: marhapecsenye;
+    }
+    .content-3 .salata {
+        grid-area: salata;
+    }
+    .content-3 .pizza_2 {
+        grid-area: pizza_2;
+    }
+    .content-3 .eloetel {
+        grid-area: eloetel;
+        height: 200px;
+    }
+    
+    .content-3 .special_container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .content-3 .special_container p {
+        position: relative;
+        top: -55px;
+        font-size: 20px;
+        font-style: italic;
+    }
 }
